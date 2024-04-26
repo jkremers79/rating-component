@@ -1,0 +1,48 @@
+img.star-icon {
+  align-self: flex-start;
+  padding: 15px;
+  background-color: hsl(214, 16%, 20%);
+  border-radius: 50%;
+}
+
+.rating-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 2rem;
+}
+
+.rating-button {
+  background-color: hsl(214, 16%, 20%);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 1rem;
+  color: hsl(217, 12%, 63%);
+  transition-delay: 100ms;
+}
+
+.rating-button.active {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+.rating-button:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.submit-rating-button {
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 2px;
+  background-color: hsl(25, 97%, 53%);
+  width: 95%;
+  padding: 0.75em;
+  border-radius: 30px;
+  transition-duration: 100ms;
+}
+
+.submit-rating-button:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+}

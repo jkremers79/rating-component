@@ -1,0 +1,12 @@
+p.submitted-text {
+  text-align: center;
+}
+
+p.show-rating {
+  text-align: center;
+  width: 70%;
+  padding: 0.5em;
+  background-color: hsl(214, 16%, 20%);
+  color: hsl(25, 97%, 53%);
+  border-radius: 20px;
+}

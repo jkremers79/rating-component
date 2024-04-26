@@ -4,23 +4,21 @@ import { MainComponent } from "./MainComponent";
 import "./App.css";
 
 function App() {
-  const [submittedRating, setSubmittedRating] = useState(false);
+  const [didSubmitRating, setDidSubmitRating] = useState(false);
   const [selectedRating, setSelectedRating] = useState();
 
   return (
     <>
-      {submittedRating ? (
+      {didSubmitRating ? (
         <SubmittedComponent selectedRating={selectedRating} />
       ) : (
         <MainComponent
-          submitted={submittedRating}
-          clickFn={setSubmittedRating}
+          submit={setDidSubmitRating}
           setSelectedRating={setSelectedRating}
-          selectedRating={selectedRating}
         />
       )}
       <div className="attribution">
-        Challenge by
+        Challenge by{" "}
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
           Frontend Mentor
         </a>

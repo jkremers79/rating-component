@@ -1,3 +1,5 @@
+import "./SubmittedComponent.css";
+
 export function SubmittedComponent({ selectedRating }) {
   return (
     <div className="wrapper">
