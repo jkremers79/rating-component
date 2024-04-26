@@ -1,4 +1,5 @@
 import "./MainComponent.css";
+import starIcon from "./assets/images/icon-star.svg";
 
 export function MainComponent({ submit, setSelectedRating }) {
   function clickFn(id) {
@@ -19,7 +20,7 @@ export function MainComponent({ submit, setSelectedRating }) {
   return (
     <div className="wrapper">
       <main>
-        <img className="star-icon" src="../src/assets/images/icon-star.svg" />
+        <img className="star-icon" src={starIcon} />
 
         <h1>How did we do? </h1>
         <p>
