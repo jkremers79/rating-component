@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       {submittedRating ? (
-        <SubmittedComponent />
+        <SubmittedComponent selectedRating={selectedRating} />
       ) : (
         <MainComponent
           submitted={submittedRating}
@@ -24,7 +24,11 @@ function App() {
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
           Frontend Mentor
         </a>
-        . Coded by <a href="#">Your Name Here</a>.
+        . Coded by{" "}
+        <a href="https://github.com/jkremers79" target="_blank">
+          Jorn Kremers
+        </a>
+        .
       </div>
     </>
   );
